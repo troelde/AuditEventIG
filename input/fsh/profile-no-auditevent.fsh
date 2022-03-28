@@ -1,8 +1,8 @@
 Profile: No_AuditEvent
 Parent: AuditEvent
 Id: no-auditevent
-Title: "no-auditevent"
-Description: ""
+Title: "Norwegian Auditevent base profile"
+Description: "Den norske basisprofilen for AuditEvent"
 * extension contains CorrelationIDExtension named corrIDExt 0..1
 * agent
   * who.extension contains 
