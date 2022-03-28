@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DipsAuditEventTypeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-dips-auditevent-types-cs.html"><code>https://dips.com/CodeSystem/dips-auditevent-types-cs</code></a></li></ul></div>
+  </text>
+  <url value="https://dips.com/ValueSet/DipsAuditEventTypeVS"/>
+  <version value="0.1.0"/>
+  <name value="DIPSAuditEventTypeValueSet"/>
+  <title value="DIPS AuditEvent Types Value Set"/>
+  <status value="active"/>
+  <date value="2022-03-28T14:43:27+02:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dips.com"/>
+    </telecom>
+  </contact>
+  <description value="Value set used for defining DIPS audit events in Arena"/>
+  <compose>
+    <include>
+      <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+    </include>
+  </compose>
+</ValueSet>

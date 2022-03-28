@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="0e02cc47-2fb5-4f64-b78f-04aa1cfe546a"/>
+  <meta>
+    <lastUpdated value="2022-03-28T14:43:27.587+02:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://dips.com/ValueSet/DipsAuditEventTypeVS"/>
+    <resource>
+      <ValueSet>
+        <id value="DipsAuditEventTypeVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 16 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-dips-auditevent-types-cs.html">AuditEvent Types code system that are used by DIPS Arena v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-dips-auditevent-types-cs.html">
+                <code>https://dips.com/CodeSystem/dips-auditevent-types-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td>
+                  <b>Level</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.Session"> </a>1
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46Session">DIPS.IAM.Session</a>
+                </td>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.Session.Logon"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46Session.46Logon">DIPS.IAM.Session.Logon</a>
+                </td>
+                <td>Login in DIPS Client</td>
+                <td>Innlogging i en eller annen DIPS sluttbrukerklient (Desktop, Mobil, osv.)</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.Session.Logout"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46Session.46Logout">DIPS.IAM.Session.Logout</a>
+                </td>
+                <td>Logout from DIPS Client</td>
+                <td>Utlogging i en eller annen DIPS sluttbrukerklient (Desktop, Mobil, osv.)</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.PatientAccess"> </a>1
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46PatientAccess">DIPS.IAM.PatientAccess</a>
+                </td>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.PatientAccess.Activate"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46PatientAccess.46Activate">DIPS.IAM.PatientAccess.Activate</a>
+                </td>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.PatientAccess.DeActivate"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46PatientAccess.46DeActivate">DIPS.IAM.PatientAccess.DeActivate</a>
+                </td>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.EHR.Document"> </a>1
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46EHR.46Document">DIPS.EHR.Document</a>
+                </td>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.EHR.Document.DocumentMetadata"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46EHR.46Document.46DocumentMetadata">DIPS.EHR.Document.DocumentMetadata</a>
+                </td>
+                <td>Document metdata</td>
+                <td>Dokumentdato, tittel, forfatter, etc. Inkluderer visning av dokumentliste (query)</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.EHR.Document.DocumentContent"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46EHR.46Document.46DocumentContent">DIPS.EHR.Document.DocumentContent</a>
+                </td>
+                <td>Document Content</td>
+                <td>Dokumentinnhold</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.Reservations"> </a>1
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46Reservations">DIPS.IAM.Reservations</a>
+                </td>
+                <td>DIPS Arena Reservations</td>
+                <td>Audit events from DIPS Arena Reservations module</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.Reservations.Reservation"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46Reservations.46Reservation">DIPS.IAM.Reservations.Reservation</a>
+                </td>
+                <td>Reservation</td>
+                <td>Reservation data (NO: sperringer)</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.Reservations.Exemption"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46Reservations.46Exemption">DIPS.IAM.Reservations.Exemption</a>
+                </td>
+                <td>Exemption</td>
+                <td>Exemption data (NO: Unntak/fritak fra sperre)</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.Admin"> </a>1
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46Admin">DIPS.IAM.Admin</a>
+                </td>
+                <td/>
+                <td/>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.Admin.User"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46Admin.46User">DIPS.IAM.Admin.User</a>
+                </td>
+                <td>DIPS User</td>
+                <td>DIPS bruker</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.Admin.UserRole"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46Admin.46UserRole">DIPS.IAM.Admin.UserRole</a>
+                </td>
+                <td>DIPS UserRole</td>
+                <td>DIPS brukerrolle. Inkluderer hendelser knyttet til endring av tilganger for brukerrollen.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="https---dips.com-CodeSystem-dips-auditevent-types-cs-DIPS.IAM.Admin.AccessProfile"> </a>2
+                </td>
+                <td style="white-space:nowrap">    
+                  <a href="CodeSystem-dips-auditevent-types-cs.html#dips-auditevent-types-cs-DIPS.46IAM.46Admin.46AccessProfile">DIPS.IAM.Admin.AccessProfile</a>
+                </td>
+                <td>DIPS AccessProfile</td>
+                <td>DIPS tilgangsprofil</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://dips.com/ValueSet/DipsAuditEventTypeVS"/>
+        <version value="0.1.0"/>
+        <name value="DIPSAuditEventTypeValueSet"/>
+        <title value="DIPS AuditEvent Types Value Set"/>
+        <status value="active"/>
+        <date value="2022-03-28T14:43:27+02:00"/>
+        <publisher value="DIPS AS"/>
+        <contact>
+          <name value="DIPS AS"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://dips.com"/>
+          </telecom>
+        </contact>
+        <description value="Value set used for defining DIPS audit events in Arena"/>
+        <expansion>
+          <identifier value="urn:uuid:60b189e3-c7ee-44a5-adb7-8acbb9510ff6"/>
+          <timestamp value="2022-03-28T14:43:46+02:00"/>
+          <total value="16"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://dips.com/CodeSystem/dips-auditevent-types-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+            <code value="DIPS.IAM.Session"/>
+            <contains>
+              <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+              <code value="DIPS.IAM.Session.Logon"/>
+              <display value="Login in DIPS Client"/>
+            </contains>
+            <contains>
+              <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+              <code value="DIPS.IAM.Session.Logout"/>
+              <display value="Logout from DIPS Client"/>
+            </contains>
+          </contains>
+          <contains>
+            <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+            <code value="DIPS.IAM.PatientAccess"/>
+            <contains>
+              <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+              <code value="DIPS.IAM.PatientAccess.Activate"/>
+            </contains>
+            <contains>
+              <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+              <code value="DIPS.IAM.PatientAccess.DeActivate"/>
+            </contains>
+          </contains>
+          <contains>
+            <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+            <code value="DIPS.EHR.Document"/>
+            <contains>
+              <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+              <code value="DIPS.EHR.Document.DocumentMetadata"/>
+              <display value="Document metdata"/>
+            </contains>
+            <contains>
+              <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+              <code value="DIPS.EHR.Document.DocumentContent"/>
+              <display value="Document Content"/>
+            </contains>
+          </contains>
+          <contains>
+            <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+            <code value="DIPS.IAM.Reservations"/>
+            <display value="DIPS Arena Reservations"/>
+            <contains>
+              <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+              <code value="DIPS.IAM.Reservations.Reservation"/>
+              <display value="Reservation"/>
+            </contains>
+            <contains>
+              <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+              <code value="DIPS.IAM.Reservations.Exemption"/>
+              <display value="Exemption"/>
+            </contains>
+          </contains>
+          <contains>
+            <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+            <code value="DIPS.IAM.Admin"/>
+            <contains>
+              <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+              <code value="DIPS.IAM.Admin.User"/>
+              <display value="DIPS User"/>
+            </contains>
+            <contains>
+              <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+              <code value="DIPS.IAM.Admin.UserRole"/>
+              <display value="DIPS UserRole"/>
+            </contains>
+            <contains>
+              <system value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+              <code value="DIPS.IAM.Admin.AccessProfile"/>
+              <display value="DIPS AccessProfile"/>
+            </contains>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

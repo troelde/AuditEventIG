@@ -1,0 +1,79 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "DIPSIDTypesCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://dips.com/CodeSystem/DIPSIDTypesCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DIPSUserRoleID<a name=\"DIPSIDTypesCS-DIPSUserRoleID\"> </a></td><td>DIPS User Role ID</td><td>NO: DIPS brukerrolle ID</td></tr><tr><td style=\"white-space:nowrap\">DIPSUserName<a name=\"DIPSIDTypesCS-DIPSUserName\"> </a></td><td>DIPS User Name</td><td>NO: DIPS brukernavn</td></tr><tr><td style=\"white-space:nowrap\">FQN<a name=\"DIPSIDTypesCS-FQN\"> </a></td><td>Fully qualified name</td><td/></tr><tr><td style=\"white-space:nowrap\">DIPSPersonID<a name=\"DIPSIDTypesCS-DIPSPersonID\"> </a></td><td>DIPS PersonID</td><td/></tr><tr><td style=\"white-space:nowrap\">DIPSPatientID<a name=\"DIPSIDTypesCS-DIPSPatientID\"> </a></td><td>DIPS Patient ID</td><td>NO: DIPS Pasient ID (NPR-ID)</td></tr><tr><td style=\"white-space:nowrap\">FNR<a name=\"DIPSIDTypesCS-FNR\"> </a></td><td>Fødselsnummer (NO)</td><td/></tr><tr><td style=\"white-space:nowrap\">DNR<a name=\"DIPSIDTypesCS-DNR\"> </a></td><td>D-nummer (NO)</td><td/></tr><tr><td style=\"white-space:nowrap\">HNR<a name=\"DIPSIDTypesCS-HNR\"> </a></td><td>H-nummer (NO)</td><td/></tr><tr><td style=\"white-space:nowrap\">Reservation<a name=\"DIPSIDTypesCS-Reservation\"> </a></td><td>ReservationID</td><td/></tr><tr><td style=\"white-space:nowrap\">ReservationChangeLog<a name=\"DIPSIDTypesCS-ReservationChangeLog\"> </a></td><td>ReservationChangeLog</td><td/></tr><tr><td style=\"white-space:nowrap\">DocumentVersionIndependentId<a name=\"DIPSIDTypesCS-DocumentVersionIndependentId\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">DocumentID<a name=\"DIPSIDTypesCS-DocumentID\"> </a></td><td/><td/></tr></table></div>"
+  },
+  "url": "https://dips.com/CodeSystem/DIPSIDTypesCS",
+  "version": "0.1.0",
+  "name": "DIPSIDTypesCS",
+  "title": "DIPSIDTypesCS",
+  "status": "active",
+  "date": "2022-03-28T14:43:27+02:00",
+  "publisher": "DIPS AS",
+  "contact": [
+    {
+      "name": "DIPS AS",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://dips.com"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 12,
+  "concept": [
+    {
+      "code": "DIPSUserRoleID",
+      "display": "DIPS User Role ID",
+      "definition": "NO: DIPS brukerrolle ID"
+    },
+    {
+      "code": "DIPSUserName",
+      "display": "DIPS User Name",
+      "definition": "NO: DIPS brukernavn"
+    },
+    {
+      "code": "FQN",
+      "display": "Fully qualified name"
+    },
+    {
+      "code": "DIPSPersonID",
+      "display": "DIPS PersonID"
+    },
+    {
+      "code": "DIPSPatientID",
+      "display": "DIPS Patient ID",
+      "definition": "NO: DIPS Pasient ID (NPR-ID)"
+    },
+    {
+      "code": "FNR",
+      "display": "Fødselsnummer (NO)"
+    },
+    {
+      "code": "DNR",
+      "display": "D-nummer (NO)"
+    },
+    {
+      "code": "HNR",
+      "display": "H-nummer (NO)"
+    },
+    {
+      "code": "Reservation",
+      "display": "ReservationID"
+    },
+    {
+      "code": "ReservationChangeLog",
+      "display": "ReservationChangeLog"
+    },
+    {
+      "code": "DocumentVersionIndependentId"
+    },
+    {
+      "code": "DocumentID"
+    }
+  ]
+}

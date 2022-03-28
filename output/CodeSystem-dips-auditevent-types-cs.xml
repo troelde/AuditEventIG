@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="dips-auditevent-types-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://dips.com/CodeSystem/dips-auditevent-types-cs defines the following codes:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style="white-space:nowrap">DIPS.IAM.Session<a name="dips-auditevent-types-cs-DIPS.46IAM.46Session"> </a></td><td/><td/></tr><tr><td>2</td><td style="white-space:nowrap">  DIPS.IAM.Session.Logon<a name="dips-auditevent-types-cs-DIPS.46IAM.46Session.46Logon"> </a></td><td>Login in DIPS Client</td><td>Innlogging i en eller annen DIPS sluttbrukerklient (Desktop, Mobil, osv.)</td></tr><tr><td>2</td><td style="white-space:nowrap">  DIPS.IAM.Session.Logout<a name="dips-auditevent-types-cs-DIPS.46IAM.46Session.46Logout"> </a></td><td>Logout from DIPS Client</td><td>Utlogging i en eller annen DIPS sluttbrukerklient (Desktop, Mobil, osv.)</td></tr><tr><td>1</td><td style="white-space:nowrap">DIPS.IAM.PatientAccess<a name="dips-auditevent-types-cs-DIPS.46IAM.46PatientAccess"> </a></td><td/><td/></tr><tr><td>2</td><td style="white-space:nowrap">  DIPS.IAM.PatientAccess.Activate<a name="dips-auditevent-types-cs-DIPS.46IAM.46PatientAccess.46Activate"> </a></td><td/><td/></tr><tr><td>2</td><td style="white-space:nowrap">  DIPS.IAM.PatientAccess.DeActivate<a name="dips-auditevent-types-cs-DIPS.46IAM.46PatientAccess.46DeActivate"> </a></td><td/><td/></tr><tr><td>1</td><td style="white-space:nowrap">DIPS.EHR.Document<a name="dips-auditevent-types-cs-DIPS.46EHR.46Document"> </a></td><td/><td/></tr><tr><td>2</td><td style="white-space:nowrap">  DIPS.EHR.Document.DocumentMetadata<a name="dips-auditevent-types-cs-DIPS.46EHR.46Document.46DocumentMetadata"> </a></td><td>Document metdata</td><td>Dokumentdato, tittel, forfatter, etc. Inkluderer visning av dokumentliste (query)</td></tr><tr><td>2</td><td style="white-space:nowrap">  DIPS.EHR.Document.DocumentContent<a name="dips-auditevent-types-cs-DIPS.46EHR.46Document.46DocumentContent"> </a></td><td>Document Content</td><td>Dokumentinnhold</td></tr><tr><td>1</td><td style="white-space:nowrap">DIPS.IAM.Reservations<a name="dips-auditevent-types-cs-DIPS.46IAM.46Reservations"> </a></td><td>DIPS Arena Reservations</td><td>Audit events from DIPS Arena Reservations module</td></tr><tr><td>2</td><td style="white-space:nowrap">  DIPS.IAM.Reservations.Reservation<a name="dips-auditevent-types-cs-DIPS.46IAM.46Reservations.46Reservation"> </a></td><td>Reservation</td><td>Reservation data (NO: sperringer)</td></tr><tr><td>2</td><td style="white-space:nowrap">  DIPS.IAM.Reservations.Exemption<a name="dips-auditevent-types-cs-DIPS.46IAM.46Reservations.46Exemption"> </a></td><td>Exemption</td><td>Exemption data (NO: Unntak/fritak fra sperre)</td></tr><tr><td>1</td><td style="white-space:nowrap">DIPS.IAM.Admin<a name="dips-auditevent-types-cs-DIPS.46IAM.46Admin"> </a></td><td/><td/></tr><tr><td>2</td><td style="white-space:nowrap">  DIPS.IAM.Admin.User<a name="dips-auditevent-types-cs-DIPS.46IAM.46Admin.46User"> </a></td><td>DIPS User</td><td>DIPS bruker</td></tr><tr><td>2</td><td style="white-space:nowrap">  DIPS.IAM.Admin.UserRole<a name="dips-auditevent-types-cs-DIPS.46IAM.46Admin.46UserRole"> </a></td><td>DIPS UserRole</td><td>DIPS brukerrolle. Inkluderer hendelser knyttet til endring av tilganger for brukerrollen.</td></tr><tr><td>2</td><td style="white-space:nowrap">  DIPS.IAM.Admin.AccessProfile<a name="dips-auditevent-types-cs-DIPS.46IAM.46Admin.46AccessProfile"> </a></td><td>DIPS AccessProfile</td><td>DIPS tilgangsprofil</td></tr></table></div>
+  </text>
+  <url value="https://dips.com/CodeSystem/dips-auditevent-types-cs"/>
+  <version value="0.1.0"/>
+  <name value="DIPSAuditeventTypes"/>
+  <title value="AuditEvent Types code system that are used by DIPS Arena"/>
+  <status value="active"/>
+  <date value="2022-03-28T14:43:27+02:00"/>
+  <publisher value="DIPS AS"/>
+  <contact>
+    <name value="DIPS AS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dips.com"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="16"/>
+  <concept>
+    <code value="DIPS.IAM.Session"/>
+    <concept>
+      <code value="DIPS.IAM.Session.Logon"/>
+      <display value="Login in DIPS Client"/>
+      <definition value="Innlogging i en eller annen DIPS sluttbrukerklient (Desktop, Mobil, osv.)"/>
+    </concept>
+    <concept>
+      <code value="DIPS.IAM.Session.Logout"/>
+      <display value="Logout from DIPS Client"/>
+      <definition value="Utlogging i en eller annen DIPS sluttbrukerklient (Desktop, Mobil, osv.)"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="DIPS.IAM.PatientAccess"/>
+    <concept>
+      <code value="DIPS.IAM.PatientAccess.Activate"/>
+    </concept>
+    <concept>
+      <code value="DIPS.IAM.PatientAccess.DeActivate"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="DIPS.EHR.Document"/>
+    <concept>
+      <code value="DIPS.EHR.Document.DocumentMetadata"/>
+      <display value="Document metdata"/>
+      <definition value="Dokumentdato, tittel, forfatter, etc. Inkluderer visning av dokumentliste (query)"/>
+    </concept>
+    <concept>
+      <code value="DIPS.EHR.Document.DocumentContent"/>
+      <display value="Document Content"/>
+      <definition value="Dokumentinnhold"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="DIPS.IAM.Reservations"/>
+    <display value="DIPS Arena Reservations"/>
+    <definition value="Audit events from DIPS Arena Reservations module"/>
+    <concept>
+      <code value="DIPS.IAM.Reservations.Reservation"/>
+      <display value="Reservation"/>
+      <definition value="Reservation data (NO: sperringer)"/>
+    </concept>
+    <concept>
+      <code value="DIPS.IAM.Reservations.Exemption"/>
+      <display value="Exemption"/>
+      <definition value="Exemption data (NO: Unntak/fritak fra sperre)"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="DIPS.IAM.Admin"/>
+    <concept>
+      <code value="DIPS.IAM.Admin.User"/>
+      <display value="DIPS User"/>
+      <definition value="DIPS bruker"/>
+    </concept>
+    <concept>
+      <code value="DIPS.IAM.Admin.UserRole"/>
+      <display value="DIPS UserRole"/>
+      <definition value="DIPS brukerrolle. Inkluderer hendelser knyttet til endring av tilganger for brukerrollen."/>
+    </concept>
+    <concept>
+      <code value="DIPS.IAM.Admin.AccessProfile"/>
+      <display value="DIPS AccessProfile"/>
+      <definition value="DIPS tilgangsprofil"/>
+    </concept>
+  </concept>
+</CodeSystem>

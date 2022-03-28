@@ -1,0 +1,166 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dips.com/AuditEvent/3068e19d-a981-45da-a43c-bdf339512926> a fhir:AuditEvent;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "3068e19d-a981-45da-a43c-bdf339512926"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://dips.com/StructureDefinition/DIPS-AuditEvent-EHR";
+       fhir:index 0;
+       fhir:link <https://dips.com/StructureDefinition/DIPS-AuditEvent-EHR>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "additional" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">This is an example of a create reservation event, but may as well be used in an Update or Delete action.</div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://dips.com/StructureDefinition/CorrelationIDExtensionId" ];
+     fhir:Extension.valueString [ fhir:value "<HTTP header correlation-ID>" ]
+  ];
+  fhir:AuditEvent.type [
+     fhir:Coding.system [ fhir:value "https://dips.com/CodeSystem/dips-auditevent-types-cs" ];
+     fhir:Coding.code [ fhir:value "DIPS.IAM.Reservations" ]
+  ];
+  fhir:AuditEvent.subtype [
+     fhir:index 0;
+     fhir:Coding.system [ fhir:value "https://dips.com/CodeSystem/dips-auditevent-types-cs" ];
+     fhir:Coding.code [ fhir:value "DIPS.IAM.Reservations.Reservation" ]
+  ];
+  fhir:AuditEvent.action [ fhir:value "C"];
+  fhir:AuditEvent.recorded [ fhir:value "2022-02-20T21:10:00+01:00"^^xsd:dateTime];
+  fhir:AuditEvent.outcome [ fhir:value "0"];
+  fhir:AuditEvent.agent [
+     fhir:index 0;
+     fhir:AuditEvent.agent.who [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "https://dips.com/StructureDefinition/OtherID" ];
+         fhir:Extension.valueIdentifier [
+           fhir:Identifier.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://dips.com/CodeSystem/DIPSIDTypesCS" ];
+               fhir:Coding.code [ fhir:value "DIPSUserRoleID" ]
+             ]
+           ];
+           fhir:Identifier.value [ fhir:value "<dips-userroleid>" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "https://dips.com/StructureDefinition/OtherID" ];
+         fhir:Extension.valueIdentifier [
+           fhir:Identifier.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://dips.com/CodeSystem/DIPSIDTypesCS" ];
+               fhir:Coding.code [ fhir:value "DIPSUserName" ]
+             ]
+           ];
+           fhir:Identifier.value [ fhir:value "<dips-usernamed>" ]
+         ]
+       ];
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "<sub-attribute>" ]
+       ]
+     ];
+     fhir:AuditEvent.agent.requestor [ fhir:value "true"^^xsd:boolean ];
+     fhir:AuditEvent.agent.policy [
+       fhir:value "985ad665-97fc-4c37-9b17-4da7dcca3d15";
+       fhir:index 0
+     ];
+     fhir:AuditEvent.agent.network [
+       fhir:AuditEvent.agent.network.address [ fhir:value "<IP-address user device if available>" ];
+       fhir:AuditEvent.agent.network.type [ fhir:value "2" ]
+     ]
+  ];
+  fhir:AuditEvent.source [
+     fhir:AuditEvent.source.observer [
+       fhir:Reference.identifier [
+         fhir:Identifier.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://dips.com/CodeSystem/DIPSIDTypesCS" ];
+             fhir:Coding.code [ fhir:value "FQN" ]
+           ]
+         ];
+         fhir:Identifier.value [ fhir:value "<Fully qualified type name>" ]
+       ]
+     ]
+  ];
+  fhir:AuditEvent.entity [
+     fhir:index 0;
+     fhir:AuditEvent.entity.what [
+       fhir:Reference.identifier [
+         fhir:Identifier.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://dips.com/CodeSystem/DIPSIDTypesCS" ];
+             fhir:Coding.code [ fhir:value "DIPSPersonID" ]
+           ]
+         ];
+         fhir:Identifier.value [ fhir:value "<DIPS PasientID>" ]
+       ]
+     ];
+     fhir:AuditEvent.entity.type [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/audit-entity-type" ];
+       fhir:Coding.code [ fhir:value "1" ];
+       fhir:Coding.display [ fhir:value "Person" ]
+     ];
+     fhir:AuditEvent.entity.role [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/object-role" ];
+       fhir:Coding.code [ fhir:value "1" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:AuditEvent.entity.what [
+       fhir:Reference.identifier [
+         fhir:Identifier.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://dips.com/CodeSystem/DIPSIDTypesCS" ];
+             fhir:Coding.code [ fhir:value "Reservation" ]
+           ]
+         ];
+         fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+         fhir:Identifier.value [ fhir:value "<ReservationUUID>" ]
+       ]
+     ];
+     fhir:AuditEvent.entity.type [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/audit-entity-type" ];
+       fhir:Coding.code [ fhir:value "2" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:AuditEvent.entity.what [
+       fhir:Reference.identifier [
+         fhir:Identifier.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://dips.com/CodeSystem/DIPSIDTypesCS" ];
+             fhir:Coding.code [ fhir:value "ReservationChangeLog" ]
+           ]
+         ];
+         fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+         fhir:Identifier.value [ fhir:value "<ChangeLogUUID>" ]
+       ]
+     ];
+     fhir:AuditEvent.entity.type [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/audit-entity-type" ];
+       fhir:Coding.code [ fhir:value "2" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://dips.com/AuditEvent/3068e19d-a981-45da-a43c-bdf339512926.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
